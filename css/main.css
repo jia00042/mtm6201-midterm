@@ -1,0 +1,799 @@
+/* 全局样式 */
+/* 全局 img 样式，适用于所有图片 */
+img {
+    display: block;       /* 让 img 变成块级元素，去除 inline 额外间距 */
+    width: 100%;          /* 让图片充满父容器 */
+    height: 100%;         /* 保持高度充满 */
+    object-fit: cover;    /* 让图片填充整个区域，避免空白 */
+    margin: 0;            /* 确保没有额外的外边距 */
+    padding: 0;           /* 确保没有额外的内边距 */
+    border: none;         /* 确保没有默认边框 */
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fefaf5;
+}
+
+/* 头部 */
+.header {
+    background-color: #fefaf5;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+/* 容器 */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo - 调大 */
+.logo img {
+    height: 200px;  /* 原来是 40px，现在加大 */
+}
+
+/* 导航栏 */
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px; /* 增加间距 */
+    padding: 0;
+    margin: 0;
+}
+
+.nav ul li {
+    display: inline;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #2b2118;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/* 右侧图标 */
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-icons i {
+    font-size: 22px;  /* 增大图标 */
+    color: #2b2118;
+    cursor: pointer;
+}
+
+/* 注册按钮 */
+.btn-signup {
+    background-color: #2b2118;
+    color: white;
+    border: none;
+    padding: 12px 25px; /* 调整大小 */
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-signup:hover {
+    background-color: #1a140f;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #fefaf5; /* 背景色 */
+    padding: 80px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 容器 */
+.hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* 左侧文本 */
+.hero-text {
+    max-width: 45%;
+}
+
+.hero-text h1 {
+    font-size: 56px;
+    color: #2b2118;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #2b2118;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* 按钮 */
+.btn-signup {
+    background-color: #2b2118;
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-signup:hover {
+    background-color: #1a140f;
+}
+
+/* 右侧图片 */
+.hero-image img {
+    max-width: 550px;
+    height: auto;
+}
+
+/* 搜索栏 */
+.search-bar {
+    background-color: #d8c4b6; /* 浅棕色背景 */
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 900px;
+    margin: -50px auto 50px; /* 让它浮在 Hero 之下 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 搜索框 */
+.search-input {
+    background-color: #fff;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #2b2118;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+/* 搜索框内图标 */
+.search-input i {
+    color: #6c584c;
+    font-size: 18px;
+}
+
+/* 搜索按钮 */
+.btn-signup {
+    background-color: #2b2118;
+    color: white;
+    border: none;
+    padding: 14px 25px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-signup:hover {
+    background-color: #1a140f;
+}
+
+/* 服务区域 */
+.service {
+    background-color: #fff;
+    padding: 80px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 容器 */
+.service .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* 左侧图片 */
+.service-image img {
+    max-width: 500px;
+    height: auto;
+    border-radius: 15px;
+}
+
+/* 右侧文本 */
+.service-text {
+    max-width: 50%;
+}
+
+.service-text h2 {
+    font-size: 42px;
+    color: #2b2118;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.service-text p {
+    font-size: 18px;
+    color: #2b2118;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* 统计数据 */
+.stats {
+    display: flex;
+    gap: 40px;
+}
+
+.stat h3 {
+    font-size: 32px;
+    color: #2b2118;
+    font-weight: bold;
+}
+
+.stat p {
+    font-size: 16px;
+    color: #2b2118;
+}
+
+/* 为什么选择我们 */
+.why-choose-us {
+    background-color: #fff;
+    padding: 80px 50px;
+    text-align: center;
+}
+
+/* 容器 */
+.why-choose-us .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; /* 让标题和卡片垂直排列 */
+    align-items: center;
+}
+
+/* 标题和描述 */
+.section-header {
+    max-width: 700px;
+    margin-bottom: 40px;
+}
+
+.section-header h2 {
+    font-size: 42px;
+    color: #2b2118;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.section-header p {
+    font-size: 18px;
+    color: #2b2118;
+}
+
+/* 特色卡片区域 */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+/* 单个卡片 - **缩小尺寸** */
+.feature-card {
+    background-color: #d8c4b6;
+    padding: 20px; /* 适当减少内边距 */
+    border-radius: 12px;
+    width: 220px; /* 缩小卡片宽度 */
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 图标样式 */
+.feature-card .icon {
+    background-color: #fefaf5;
+    padding: 12px; /* 适当减少图标背景的大小 */
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.feature-card .icon i {
+    font-size: 20px; /* 适当减少图标大小 */
+    color: #2b2118;
+}
+
+/* 文字样式 */
+.feature-card h3 {
+    font-size: 18px; /* 适当减少标题大小 */
+    color: #2b2118;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.feature-card p {
+    font-size: 14px; /* 适当减少描述文字大小 */
+    color: #2b2118;
+}
+
+/* 📌 响应式调整 */
+@media (max-width: 1024px) {
+    .features {
+        justify-content: center;
+    }
+
+    .feature-card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .feature-card {
+        width: 100%;
+    }
+}
+
+/* 热门房源 */
+.popular-residences {
+    background-color: #fff;
+    padding: 80px 50px;
+    text-align: center;
+}
+
+/* 容器 - **确保标题和内容整体居中** */
+.popular-residences .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 标题 */
+.section-header {
+    width: 100%;
+    text-align: center; /* **确保标题居中** */
+    margin-bottom: 40px;
+}
+
+.section-header h2 {
+    font-size: 42px;
+    color: #2b2118;
+    font-weight: bold;
+}
+
+/* 房源卡片区域 */
+.residence-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* **减少间距** */
+    flex-wrap: wrap;
+}
+
+/* 单个房源卡片 - **缩小尺寸** */
+.residence-card {
+    background-color: #d8c4b6;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 280px; /* **缩小整体尺寸** */
+    text-align: left;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 图片 - **增加高度，让其占比更大** */
+.residence-card img {
+    width: 100%;
+    height: 200px; /* **固定高度，确保大小一致** */
+    object-fit: cover; /* **裁剪图片填充卡片** */
+    display: block;
+}
+
+/* 信息部分 */
+.residence-info {
+    padding: 15px;
+}
+
+/* 房产标题 */
+.residence-info h3 {
+    font-size: 16px; /* **适当缩小标题** */
+    font-weight: bold;
+    color: #2b2118;
+    margin-bottom: 8px;
+}
+
+/* 细节信息 */
+.residence-details {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px; /* **调整文本大小** */
+    color: #2b2118;
+    margin-bottom: 10px;
+}
+
+.residence-details i {
+    margin-right: 5px;
+}
+
+/* "Sign Up" 按钮 */
+.residence-card .btn-signup {
+    background-color: #2b2118;
+    color: white;
+    border: none;
+    padding: 6px 15px; /* **减少按钮大小** */
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.residence-card .btn-signup:hover {
+    background-color: #1a140f;
+}
+
+/* 价格 */
+.price {
+    font-size: 16px; /* **适当缩小字体** */
+    font-weight: bold;
+    color: #2b2118;
+    text-align: right;
+    margin-top: 8px;
+}
+
+/* 📌 响应式优化 */
+@media (max-width: 1024px) {
+    .residence-card {
+        width: 45%; /* **调整为两列布局** */
+    }
+}
+
+@media (max-width: 768px) {
+    .residence-card {
+        width: 100%; /* **小屏幕单列** */
+    }
+}
+
+/* 客户评价部分 */
+.testimonials {
+    background-color: #fef5ec;
+    padding: 60px 30px; /* **缩小 padding 让页面更紧凑** */
+    text-align: center;
+}
+
+/* 容器 */
+.testimonials .container {
+    max-width: 1100px; /* **限制最大宽度** */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 标题 */
+.section-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-header h2 {
+    font-size: 36px; /* **标题稍微缩小** */
+    color: #2b2118;
+    font-weight: bold;
+}
+
+/* 评价轮播 */
+.testimonial-slider {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* **卡片间距调整** */
+    flex-wrap: wrap;
+}
+
+/* 单个评价卡片 */
+.testimonial-card {
+    background-color: #d8c4b6;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 320px; /* **卡片尺寸调整** */
+    text-align: left;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+/* 顶部图片部分 */
+.testimonial-top-image {
+    width: 100%;
+    height: 180px; /* **图片高度调整** */
+    object-fit: cover;
+    display: block;
+}
+
+/* 评价内容 */
+.testimonial-content {
+    padding: 15px;
+}
+
+/* 用户信息（头像+名字+评分） */
+.user-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 0px;
+}
+
+/* 用户头像 */
+.user-info .user-avatar {
+    width: 50px; /* **头像大小修正** */
+    height: 200px;
+    border-radius: 0%;
+    object-fit: cover;
+}
+
+/* 用户详情（名字+城市） */
+.user-details {
+    flex-grow: 1;
+}
+
+/* 评分框 */
+.rating {
+    background-color: #fff3d0;
+    border-radius: 6px;
+    padding: 3px 6px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #2b2118;
+    display: flex;
+    align-items: center;
+}
+
+/* 评分星星 */
+.rating i {
+    color: #ffcc00;
+    margin-right: 3px;
+}
+
+/* 评价文本 */
+.testimonial-text {
+    font-size: 14px;
+    color: #2b2118;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+/* 轮播按钮 */
+.testimonial-controls {
+    margin-top: 20px;
+}
+
+.testimonial-controls button {
+    background-color: #2b2118;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 8px;
+}
+
+.testimonial-controls button:hover {
+    background-color: #1a140f;
+}
+
+/* 整个部分的背景颜色 */
+.help-section {
+    background-color: #ffffff;
+    padding: 60px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+/* 容器居中 */
+.containerhelp {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column; /* 让所有元素垂直排列 */
+    align-items: center;
+}
+
+/* 标题 */
+.help-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.help-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #2b2118;
+    margin-bottom: 5px;
+}
+
+.help-title h3 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2b2118;
+}
+
+/* 选项 - 聊天 & FAQ */
+.support-options {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #2b2118;
+}
+
+/* 图标 */
+.option i {
+    font-size: 20px;
+    color: #2b2118;
+}
+
+/* 邮件输入框和提交按钮 */
+.email-form {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.email-input {
+    padding: 15px;
+    width: 300px;
+    font-size: 16px;
+    border: 1px solid #d8c4b6;
+    background-color: #d8c4b6;
+    border-radius: 8px;
+    outline: none;
+    color: #2b2118;
+}
+
+.email-input::placeholder {
+    color: #6c584c;
+}
+
+/* 提交按钮 */
+.btn-submit {
+    background-color: #2b2118;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #1a140f;
+}
+
+/* Footer 整体样式 */
+.footer {
+    background-color: #c4a999; /* 浅棕色背景 */
+    padding: 50px 0;
+}
+
+/* Footer 内部容器 */
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* 允许小屏幕换行 */
+}
+
+/* Footer 左侧 Logo 部分 */
+.footer-logo {
+    max-width: 250px;
+}
+
+.footer-logo img {
+    height: 40px;
+    margin-bottom: 15px;
+}
+
+.footer-logo p {
+    color: #2b2118;
+    font-size: 16px;
+    font-weight: 500;
+    max-width: 220px;
+    line-height: 1.5;
+}
+
+/* Footer 右侧四个部分 */
+.footer-section {
+    flex: 1;
+    min-width: 180px; /* 避免太窄 */
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    color: #2b2118;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #2b2118;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #1a140f;
+}
+
+/* 社交媒体部分 */
+.footer-social {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-social a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #2b2118;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.footer-social a i {
+    font-size: 18px;
+    margin-right: 10px;
+}
